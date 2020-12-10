@@ -122,6 +122,11 @@ func listChartResource() *schema.Resource {
 							Optional:    true,
 							Description: "An arbitrary suffix to display with the value of this plot",
 						},
+						"display_name": &schema.Schema{
+							Type:        schema.TypeString,
+							Optional:    true,
+							Description: "Specifies an alternate value for the Plot Name column",
+						},
 					},
 				},
 			},
